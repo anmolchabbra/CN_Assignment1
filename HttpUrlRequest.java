@@ -1,7 +1,6 @@
-import java.util.HashMap;
 import java.util.Map;
 
-public class HttpPostRequest {
+public class HttpUrlRequest {
     private final String httpVerb;
 
     private final boolean isVerbose;
@@ -16,7 +15,7 @@ public class HttpPostRequest {
 //    public HttpPostRequest() {
 //        headers = new HashMap<>();
 //    }
-    public HttpPostRequest(String httpVerb, String httpUrl, String serverHost, String path, Map<String, String> headers, boolean isVerbose, String inlineData, String filePath) {
+    public HttpUrlRequest(String httpVerb, String httpUrl, String serverHost, String path, Map<String, String> headers, boolean isVerbose, String inlineData, String filePath) {
         this.httpVerb = httpVerb;
         this.serverHost = serverHost;
         this.path = path;
